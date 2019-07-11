@@ -1,214 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <title>Survey</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h2>Survey Questions</h2>
-        <hr>
-        <h3><strong>About You</strong></h3>
-        <p>Please answer all of the questions to compare compatibility.</p>
-        <h4>Name (Required)</h4>
-        <input type="text" name="" id="name" class="form-control" required>
-        <h4>Link to photo (Required)</h4>
-        <input type="text" name="" id="photo" class="form-control" required>
-        <hr>
-        <section id="friend-form">
-            <section class="form-group">
-                <h3>Question 1</h3>
-                <label for="item1">
-                    Do you find it difficult to connect with people?
-                </label>
-                <div>
-                    <select class="form-control" id="item1">
-                        <option value="" selected disabled></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 2</h3>
-                    <label for="item2">
-                        Do you like Cats?
-                    </label>
-                    <div>
-                        <select class="form-control" id="item2">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 3</h3>
-                    <label for="item3">
-                        Is it fun to hang with all kinds of people?
-                    </label>
-                    <div>
-                        <select class="form-control" id="item3">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 4</h3>
-                    <label for="item4">
-                        Do you think dogs are mans bestfriend?
-                    </label>
-                    <div>
-                        <select class="form-control" id="item4">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 5</h3>
-                    <label for="item5">
-                        Like to watch alot of cartoons!
-                    </label>
-                    <div>
-                        <select class="form-control" id="item5">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 6</h3>
-                    <label for="item6">
-                        Watch a lot of reality TV shows
-                    </label>
-                    <div>
-                        <select class="form-control" id="item6">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 7</h3>
-                    <label for="item7">
-                        Do you like going to parties to drink?
-                    </label>
-                    <div>
-                        <select class="form-control" id="item7">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 8</h3>
-                    <label for="item8">
-                        Would yo call yourself tech savy?
-                    </label>
-                    <div>
-                        <select class="form-control" id="item8">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 9</h3>
-                    <label for="item9">
-                        Are you a very distacted Person?
-                    </label>
-                    <div>
-                        <select class="form-control" id="item9">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
-            <section class="form-group">
-                    <h3>Question 10</h3>
-                    <label for="item10">
-                        Do you watch the show Thundercats?
-                    </label>
-                    <div>
-                        <select class="form-control" id="item10">
-                            <option value="" selected disabled></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-            </section>
+      <h2>Survey Questions</h2>
+      <hr />
+      <h3><strong>About You</strong></h3>
+      <p>Please answer all of the questions to compare compatibility.</p>
+      <h4>Name (Required)</h4>
+      <input type="text" name="" id="name" class="form-control" required />
+      <h4>Link to photo (Required)</h4>
+      <input type="text" name="" id="photo" class="form-control" required />
+      <hr />
+      <section id="friend-form">
+        <section class="form-group">
+          <h3>Question 1</h3>
+          <label for="item1">
+            Do you find it difficult to connect with people?
+          </label>
+          <div>
+            <select class="form-control" id="item1">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
         </section>
+        <section class="form-group">
+          <h3>Question 2</h3>
+          <label for="item2">
+            Do you like Cats?
+          </label>
+          <div>
+            <select class="form-control" id="item2">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 3</h3>
+          <label for="item3">
+            Is it fun to hang with all kinds of people?
+          </label>
+          <div>
+            <select class="form-control" id="item3">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 4</h3>
+          <label for="item4">
+            Do you think dogs are mans bestfriend?
+          </label>
+          <div>
+            <select class="form-control" id="item4">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 5</h3>
+          <label for="item5">
+            Like to watch alot of cartoons!
+          </label>
+          <div>
+            <select class="form-control" id="item5">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 6</h3>
+          <label for="item6">
+            Watch a lot of reality TV shows
+          </label>
+          <div>
+            <select class="form-control" id="item6">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 7</h3>
+          <label for="item7">
+            Do you like going to parties to drink?
+          </label>
+          <div>
+            <select class="form-control" id="item7">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 8</h3>
+          <label for="item8">
+            Would yo call yourself tech savy?
+          </label>
+          <div>
+            <select class="form-control" id="item8">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 9</h3>
+          <label for="item9">
+            Are you a very distacted Person?
+          </label>
+          <div>
+            <select class="form-control" id="item9">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-group">
+          <h3>Question 10</h3>
+          <label for="item10">
+            Do you watch the show Thundercats?
+          </label>
+          <div>
+            <select class="form-control" id="item10">
+              <option value="" selected disabled></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+        </section>
+      </section>
 
-        <div class="modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title"></h4>
-                    </div>
-                    <div class="modal-body text-center">
-                        
-                    </div>
-                </div>
+      <div class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title"></h4>
             </div>
+            <div class="modal-body text-center"></div>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-        <br>
-        <a href="/">
-        <button type="button" class="btn btn-primary"> Return Home</button>
-        </a>
-        <hr>
-        <footer class="footer">
-            <p>
-                <a href="/api/friends">API Friends List</a> | <a href="https://github.com/Akira957/homework9">GitHub Repo</a>
-            </p>
-        </footer>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      <br />
+      <a href="/">
+        <button type="button" class="btn btn-primary">Return Home</button>
+      </a>
+      <hr />
+      <footer class="footer">
+        <p>
+          <a href="/api/friends">API Friends List</a> |
+          <a href="https://github.com/Akira957/homework9">GitHub Repo</a>
+        </p>
+      </footer>
     </div>
-    <script src="assets/game.js"></script>
-</body>
+    <script type="text/javascript">
+      $("#submit").click(function() {
+        event.preventDefault();
+
+        var matchStatus = $(".modal-title");
+        var modalBody = $("modal-body");
+
+        var name = $("#name")
+          .val()
+          .trim();
+        var photo = $("#photo").val();
+        var item1 = parseInt($("#item1").val());
+        var item2 = parseInt($("#item2").val());
+        var item3 = parseInt($("#item3").val());
+        var item4 = parseInt($("#item4").val());
+        var item5 = parseInt($("#item5").val());
+        var item6 = parseInt($("#item6").val());
+        var item7 = parseInt($("#item7").val());
+        var item8 = parseInt($("#item8").val());
+        var item9 = parseInt($("#item9").val());
+        var item10 = parseInt($("#item10").val());
+
+        var userData = {
+          name: name,
+          photo: photo,
+          scores: [
+            item1,
+            item2,
+            item3,
+            item4,
+            item5,
+            item6,
+            item7,
+            item8,
+            item9,
+            item10
+          ]
+        };
+
+        if (
+          name !== "" &&
+          photo !== "" &&
+          !isNaN(item1) &&
+          !isNaN(item2) &&
+          !isNaN(item3) &&
+          !isNaN(item4) &&
+          !isNaN(item5) &&
+          !isNaN(item6) &&
+          !isNaN(item7) &&
+          !isNaN(item8) &&
+          !isNaN(item9) &&
+          !isNaN(item10)
+        ) {
+          var currentURL = window.location.origin;
+
+          $.post(currentURL + "/api/friends", userData, function(data) {
+            if (data.name !== undefined) {
+              matchStatus.html("You match with...");
+              modalBody.html(
+                `<p>...is ` +
+                  data.name +
+                  `!</p><img src=''` +
+                  data.photo +
+                  `"height="200"">`
+              );
+              //The data gives you this information when you complete the form
+            } else {
+              matchStatus.html("Not enough data!");
+              modalBody.html(
+                "<p>There is not enough information to match you</p>"
+              );
+              //The message when you don't send enough data
+            }
+
+            $(".modal").modal("toggle");
+          });
+        } else {
+          matchStatus.html("Error...");
+          modalBody.html("Please answer all the questions in the survey.");
+          //When you don't answer all the questions in the survey
+          $(".modal").modal("toggle");
+        }
+      });
+
+      // $("#friend-form").reset();
+    </script>
+    <!-- <script src="./assets/game.js"></script> -->
+  </body>
 </html>
